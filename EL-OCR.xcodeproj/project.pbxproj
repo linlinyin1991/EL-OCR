@@ -19,6 +19,9 @@
 		BD09D38620AAEA6C001CC243 /* ELScanBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BD09D38520AAEA6C001CC243 /* ELScanBaseManager.m */; };
 		BD09D38920AAEBAC001CC243 /* ELOCRScanManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BD09D38820AAEBAC001CC243 /* ELOCRScanManager.m */; };
 		BD09D38C20AAEBBF001CC243 /* ELCodeScanManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BD09D38B20AAEBBF001CC243 /* ELCodeScanManager.m */; };
+		BDB90CAD20AC20F30049D89C /* ELScanBankCardController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDB90CAC20AC20F30049D89C /* ELScanBankCardController.m */; };
+		BDB90CB420AC2B690049D89C /* ELScanView.m in Sources */ = {isa = PBXBuildFile; fileRef = BDB90CB220AC2B690049D89C /* ELScanView.m */; };
+		BDFCD67E20ABDD2B009CD6C0 /* ELScanInitialize.m in Sources */ = {isa = PBXBuildFile; fileRef = BDFCD67D20ABDD2B009CD6C0 /* ELScanInitialize.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +49,12 @@
 		BD09D38820AAEBAC001CC243 /* ELOCRScanManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELOCRScanManager.m; sourceTree = "<group>"; };
 		BD09D38A20AAEBBF001CC243 /* ELCodeScanManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELCodeScanManager.h; sourceTree = "<group>"; };
 		BD09D38B20AAEBBF001CC243 /* ELCodeScanManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELCodeScanManager.m; sourceTree = "<group>"; };
+		BDB90CAB20AC20F30049D89C /* ELScanBankCardController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELScanBankCardController.h; sourceTree = "<group>"; };
+		BDB90CAC20AC20F30049D89C /* ELScanBankCardController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELScanBankCardController.m; sourceTree = "<group>"; };
+		BDB90CB220AC2B690049D89C /* ELScanView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELScanView.m; sourceTree = "<group>"; };
+		BDB90CB320AC2B690049D89C /* ELScanView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELScanView.h; sourceTree = "<group>"; };
+		BDFCD67C20ABDD2B009CD6C0 /* ELScanInitialize.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELScanInitialize.h; sourceTree = "<group>"; };
+		BDFCD67D20ABDD2B009CD6C0 /* ELScanInitialize.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELScanInitialize.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +106,8 @@
 		BD09D37320AAE90F001CC243 /* ELOCR */ = {
 			isa = PBXGroup;
 			children = (
+				BDB90CB120AC2B690049D89C /* View */,
+				BDB90CAA20AC20BB0049D89C /* VC */,
 				BD09D38320AAE958001CC243 /* Tool */,
 				BD09D37420AAE94A001CC243 /* bank_io */,
 				BD09D37A20AAE94A001CC243 /* libexidcard */,
@@ -145,6 +156,8 @@
 		BD09D38320AAE958001CC243 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				BDFCD67C20ABDD2B009CD6C0 /* ELScanInitialize.h */,
+				BDFCD67D20ABDD2B009CD6C0 /* ELScanInitialize.m */,
 				BD09D38420AAEA6C001CC243 /* ELScanBaseManager.h */,
 				BD09D38520AAEA6C001CC243 /* ELScanBaseManager.m */,
 				BD09D38720AAEBAC001CC243 /* ELOCRScanManager.h */,
@@ -153,6 +166,24 @@
 				BD09D38B20AAEBBF001CC243 /* ELCodeScanManager.m */,
 			);
 			path = Tool;
+			sourceTree = "<group>";
+		};
+		BDB90CAA20AC20BB0049D89C /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				BDB90CAB20AC20F30049D89C /* ELScanBankCardController.h */,
+				BDB90CAC20AC20F30049D89C /* ELScanBankCardController.m */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		BDB90CB120AC2B690049D89C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BDB90CB320AC2B690049D89C /* ELScanView.h */,
+				BDB90CB220AC2B690049D89C /* ELScanView.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,7 +217,7 @@
 				TargetAttributes = {
 					BD09D35920AAE8D2001CC243 = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -228,9 +259,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD09D36220AAE8D2001CC243 /* ViewController.m in Sources */,
+				BDB90CB420AC2B690049D89C /* ELScanView.m in Sources */,
 				BD09D38920AAEBAC001CC243 /* ELOCRScanManager.m in Sources */,
 				BD09D38C20AAEBBF001CC243 /* ELCodeScanManager.m in Sources */,
 				BD09D36D20AAE8D2001CC243 /* main.m in Sources */,
+				BDFCD67E20ABDD2B009CD6C0 /* ELScanInitialize.m in Sources */,
+				BDB90CAD20AC20F30049D89C /* ELScanBankCardController.m in Sources */,
 				BD09D38620AAEA6C001CC243 /* ELScanBaseManager.m in Sources */,
 				BD09D35F20AAE8D2001CC243 /* AppDelegate.m in Sources */,
 			);
@@ -369,7 +403,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 5BL7JK9WGR;
 				INFOPLIST_FILE = "EL-OCR/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -378,8 +413,10 @@
 					"$(PROJECT_DIR)/EL-OCR/ELOCR/bank_io/exbankcardcore",
 					"$(PROJECT_DIR)/EL-OCR/ELOCR/libexidcard",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.bkjk.EL-OCR";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bkjk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "b3fab287-c6f6-48e5-9553-be72bf713f54";
+				PROVISIONING_PROFILE_SPECIFIER = bkjk_enterprise_development;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -388,7 +425,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 5BL7JK9WGR;
 				INFOPLIST_FILE = "EL-OCR/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -397,8 +435,10 @@
 					"$(PROJECT_DIR)/EL-OCR/ELOCR/bank_io/exbankcardcore",
 					"$(PROJECT_DIR)/EL-OCR/ELOCR/libexidcard",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.bkjk.EL-OCR";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bkjk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "b3fab287-c6f6-48e5-9553-be72bf713f54";
+				PROVISIONING_PROFILE_SPECIFIER = bkjk_enterprise_development;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

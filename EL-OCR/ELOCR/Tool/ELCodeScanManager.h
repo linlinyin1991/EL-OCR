@@ -7,7 +7,10 @@
 //
 
 #import "ELScanBaseManager.h"
-
+typedef NS_ENUM(NSUInteger, CodeScanType) {
+    CodeScan_QRCode,//二维码
+    CodeScan_BarCode,//条形码
+};
 @interface ELCodeScanManager : ELScanBaseManager
 
 @end

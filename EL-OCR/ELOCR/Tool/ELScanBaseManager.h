@@ -11,20 +11,13 @@
 #import <UIKit/UIKit.h>
 #import "exbankcard.h"
 #import "excards.h"
+#import "ELScanInitialize.h"
 
-typedef NS_ENUM(NSUInteger, ELScanType) {
-    ScanType_BankCard,//银行卡
-    ScanType_IDCard,//身份证
-    ScanType_QRCode,//二维码
-    ScanType_BarCode,//条形码
-};
 
-@interface ELScanBaseManager : NSObject<AVCaptureVideoDataOutputSampleBufferDelegate, AVCaptureAudioDataOutputSampleBufferDelegate,AVCaptureMetadataOutputObjectsDelegate>
+@interface ELScanBaseManager : ELScanInitialize<AVCaptureVideoDataOutputSampleBufferDelegate, AVCaptureAudioDataOutputSampleBufferDelegate,AVCaptureMetadataOutputObjectsDelegate>
 
-@property (nonatomic, strong) AVCaptureSession *captureSession;
-//输出流
-@property (nonatomic, strong) AVCaptureVideoDataOutput *videoDataOutput;
-//输入流
-@property (nonatomic, strong) AVCaptureDeviceInput *activeVideoInput;
+- (void)receiveImageBuffer:(CVPixelBufferRef)imageBuffer;
+- (void)startSession;
+- (void)stopSession;
 
 @end
