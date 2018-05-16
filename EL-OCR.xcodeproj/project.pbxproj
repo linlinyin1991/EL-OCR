@@ -1,0 +1,430 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BD09D35F20AAE8D2001CC243 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BD09D35E20AAE8D2001CC243 /* AppDelegate.m */; };
+		BD09D36220AAE8D2001CC243 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD09D36120AAE8D2001CC243 /* ViewController.m */; };
+		BD09D36520AAE8D2001CC243 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD09D36320AAE8D2001CC243 /* Main.storyboard */; };
+		BD09D36720AAE8D2001CC243 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD09D36620AAE8D2001CC243 /* Assets.xcassets */; };
+		BD09D36A20AAE8D2001CC243 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD09D36820AAE8D2001CC243 /* LaunchScreen.storyboard */; };
+		BD09D36D20AAE8D2001CC243 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BD09D36C20AAE8D2001CC243 /* main.m */; };
+		BD09D38020AAE94B001CC243 /* libbankcard.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD09D37820AAE94A001CC243 /* libbankcard.a */; };
+		BD09D38120AAE94B001CC243 /* libexidcardios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD09D37B20AAE94A001CC243 /* libexidcardios.a */; };
+		BD09D38220AAE94B001CC243 /* zocr0.lib in Resources */ = {isa = PBXBuildFile; fileRef = BD09D37D20AAE94A001CC243 /* zocr0.lib */; };
+		BD09D38620AAEA6C001CC243 /* ELScanBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BD09D38520AAEA6C001CC243 /* ELScanBaseManager.m */; };
+		BD09D38920AAEBAC001CC243 /* ELOCRScanManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BD09D38820AAEBAC001CC243 /* ELOCRScanManager.m */; };
+		BD09D38C20AAEBBF001CC243 /* ELCodeScanManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BD09D38B20AAEBBF001CC243 /* ELCodeScanManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BD09D35A20AAE8D2001CC243 /* EL-OCR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EL-OCR.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD09D35D20AAE8D2001CC243 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BD09D35E20AAE8D2001CC243 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BD09D36020AAE8D2001CC243 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BD09D36120AAE8D2001CC243 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BD09D36420AAE8D2001CC243 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BD09D36620AAE8D2001CC243 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BD09D36920AAE8D2001CC243 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BD09D36B20AAE8D2001CC243 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD09D36C20AAE8D2001CC243 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BD09D37520AAE94A001CC243 /* exbankcard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = exbankcard.h; sourceTree = "<group>"; };
+		BD09D37720AAE94A001CC243 /* exbankcardcore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = exbankcardcore.h; sourceTree = "<group>"; };
+		BD09D37820AAE94A001CC243 /* libbankcard.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libbankcard.a; sourceTree = "<group>"; };
+		BD09D37920AAE94A001CC243 /* BankCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankCard.h; sourceTree = "<group>"; };
+		BD09D37B20AAE94A001CC243 /* libexidcardios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libexidcardios.a; sourceTree = "<group>"; };
+		BD09D37D20AAE94A001CC243 /* zocr0.lib */ = {isa = PBXFileReference; lastKnownFileType = file; path = zocr0.lib; sourceTree = "<group>"; };
+		BD09D37E20AAE94A001CC243 /* commondef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = commondef.h; sourceTree = "<group>"; };
+		BD09D37F20AAE94A001CC243 /* excards.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = excards.h; sourceTree = "<group>"; };
+		BD09D38420AAEA6C001CC243 /* ELScanBaseManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELScanBaseManager.h; sourceTree = "<group>"; };
+		BD09D38520AAEA6C001CC243 /* ELScanBaseManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELScanBaseManager.m; sourceTree = "<group>"; };
+		BD09D38720AAEBAC001CC243 /* ELOCRScanManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELOCRScanManager.h; sourceTree = "<group>"; };
+		BD09D38820AAEBAC001CC243 /* ELOCRScanManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELOCRScanManager.m; sourceTree = "<group>"; };
+		BD09D38A20AAEBBF001CC243 /* ELCodeScanManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELCodeScanManager.h; sourceTree = "<group>"; };
+		BD09D38B20AAEBBF001CC243 /* ELCodeScanManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELCodeScanManager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BD09D35720AAE8D2001CC243 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD09D38020AAE94B001CC243 /* libbankcard.a in Frameworks */,
+				BD09D38120AAE94B001CC243 /* libexidcardios.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BD09D35120AAE8D2001CC243 = {
+			isa = PBXGroup;
+			children = (
+				BD09D35C20AAE8D2001CC243 /* EL-OCR */,
+				BD09D35B20AAE8D2001CC243 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BD09D35B20AAE8D2001CC243 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BD09D35A20AAE8D2001CC243 /* EL-OCR.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BD09D35C20AAE8D2001CC243 /* EL-OCR */ = {
+			isa = PBXGroup;
+			children = (
+				BD09D37320AAE90F001CC243 /* ELOCR */,
+				BD09D35D20AAE8D2001CC243 /* AppDelegate.h */,
+				BD09D35E20AAE8D2001CC243 /* AppDelegate.m */,
+				BD09D36020AAE8D2001CC243 /* ViewController.h */,
+				BD09D36120AAE8D2001CC243 /* ViewController.m */,
+				BD09D36320AAE8D2001CC243 /* Main.storyboard */,
+				BD09D36620AAE8D2001CC243 /* Assets.xcassets */,
+				BD09D36820AAE8D2001CC243 /* LaunchScreen.storyboard */,
+				BD09D36B20AAE8D2001CC243 /* Info.plist */,
+				BD09D36C20AAE8D2001CC243 /* main.m */,
+			);
+			path = "EL-OCR";
+			sourceTree = "<group>";
+		};
+		BD09D37320AAE90F001CC243 /* ELOCR */ = {
+			isa = PBXGroup;
+			children = (
+				BD09D38320AAE958001CC243 /* Tool */,
+				BD09D37420AAE94A001CC243 /* bank_io */,
+				BD09D37A20AAE94A001CC243 /* libexidcard */,
+			);
+			path = ELOCR;
+			sourceTree = "<group>";
+		};
+		BD09D37420AAE94A001CC243 /* bank_io */ = {
+			isa = PBXGroup;
+			children = (
+				BD09D37520AAE94A001CC243 /* exbankcard.h */,
+				BD09D37620AAE94A001CC243 /* exbankcardcore */,
+				BD09D37920AAE94A001CC243 /* BankCard.h */,
+			);
+			path = bank_io;
+			sourceTree = "<group>";
+		};
+		BD09D37620AAE94A001CC243 /* exbankcardcore */ = {
+			isa = PBXGroup;
+			children = (
+				BD09D37720AAE94A001CC243 /* exbankcardcore.h */,
+				BD09D37820AAE94A001CC243 /* libbankcard.a */,
+			);
+			path = exbankcardcore;
+			sourceTree = "<group>";
+		};
+		BD09D37A20AAE94A001CC243 /* libexidcard */ = {
+			isa = PBXGroup;
+			children = (
+				BD09D37B20AAE94A001CC243 /* libexidcardios.a */,
+				BD09D37C20AAE94A001CC243 /* dicts */,
+				BD09D37E20AAE94A001CC243 /* commondef.h */,
+				BD09D37F20AAE94A001CC243 /* excards.h */,
+			);
+			path = libexidcard;
+			sourceTree = "<group>";
+		};
+		BD09D37C20AAE94A001CC243 /* dicts */ = {
+			isa = PBXGroup;
+			children = (
+				BD09D37D20AAE94A001CC243 /* zocr0.lib */,
+			);
+			path = dicts;
+			sourceTree = "<group>";
+		};
+		BD09D38320AAE958001CC243 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				BD09D38420AAEA6C001CC243 /* ELScanBaseManager.h */,
+				BD09D38520AAEA6C001CC243 /* ELScanBaseManager.m */,
+				BD09D38720AAEBAC001CC243 /* ELOCRScanManager.h */,
+				BD09D38820AAEBAC001CC243 /* ELOCRScanManager.m */,
+				BD09D38A20AAEBBF001CC243 /* ELCodeScanManager.h */,
+				BD09D38B20AAEBBF001CC243 /* ELCodeScanManager.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BD09D35920AAE8D2001CC243 /* EL-OCR */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD09D37020AAE8D2001CC243 /* Build configuration list for PBXNativeTarget "EL-OCR" */;
+			buildPhases = (
+				BD09D35620AAE8D2001CC243 /* Sources */,
+				BD09D35720AAE8D2001CC243 /* Frameworks */,
+				BD09D35820AAE8D2001CC243 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "EL-OCR";
+			productName = "EL-OCR";
+			productReference = BD09D35A20AAE8D2001CC243 /* EL-OCR.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BD09D35220AAE8D2001CC243 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "yin linlin";
+				TargetAttributes = {
+					BD09D35920AAE8D2001CC243 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = BD09D35520AAE8D2001CC243 /* Build configuration list for PBXProject "EL-OCR" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BD09D35120AAE8D2001CC243;
+			productRefGroup = BD09D35B20AAE8D2001CC243 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BD09D35920AAE8D2001CC243 /* EL-OCR */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BD09D35820AAE8D2001CC243 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD09D38220AAE94B001CC243 /* zocr0.lib in Resources */,
+				BD09D36A20AAE8D2001CC243 /* LaunchScreen.storyboard in Resources */,
+				BD09D36720AAE8D2001CC243 /* Assets.xcassets in Resources */,
+				BD09D36520AAE8D2001CC243 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BD09D35620AAE8D2001CC243 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD09D36220AAE8D2001CC243 /* ViewController.m in Sources */,
+				BD09D38920AAEBAC001CC243 /* ELOCRScanManager.m in Sources */,
+				BD09D38C20AAEBBF001CC243 /* ELCodeScanManager.m in Sources */,
+				BD09D36D20AAE8D2001CC243 /* main.m in Sources */,
+				BD09D38620AAEA6C001CC243 /* ELScanBaseManager.m in Sources */,
+				BD09D35F20AAE8D2001CC243 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BD09D36320AAE8D2001CC243 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BD09D36420AAE8D2001CC243 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BD09D36820AAE8D2001CC243 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BD09D36920AAE8D2001CC243 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BD09D36E20AAE8D2001CC243 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BD09D36F20AAE8D2001CC243 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BD09D37120AAE8D2001CC243 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "EL-OCR/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/EL-OCR/ELOCR/bank_io/exbankcardcore",
+					"$(PROJECT_DIR)/EL-OCR/ELOCR/libexidcard",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bkjk.EL-OCR";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		BD09D37220AAE8D2001CC243 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "EL-OCR/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/EL-OCR/ELOCR/bank_io/exbankcardcore",
+					"$(PROJECT_DIR)/EL-OCR/ELOCR/libexidcard",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bkjk.EL-OCR";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BD09D35520AAE8D2001CC243 /* Build configuration list for PBXProject "EL-OCR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD09D36E20AAE8D2001CC243 /* Debug */,
+				BD09D36F20AAE8D2001CC243 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD09D37020AAE8D2001CC243 /* Build configuration list for PBXNativeTarget "EL-OCR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD09D37120AAE8D2001CC243 /* Debug */,
+				BD09D37220AAE8D2001CC243 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BD09D35220AAE8D2001CC243 /* Project object */;
+}
